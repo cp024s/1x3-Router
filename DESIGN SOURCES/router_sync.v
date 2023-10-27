@@ -1,11 +1,18 @@
-/***************************************************************************************************
+// --------------------------------------------------------------------------------
 
-NAME        :  CHANDRA PRAKASH
-FILENAME    :  router_sync.v
-DATE        :  26/10/2023
-DESCRIPTION :  ROUTER - SYNCHRONIZER design
+// Create Date: 28.10.2023 01:14:47
+// Design Name: 
+// Module Name: router_sync
+// Project Name: 1 x 3 Router Design
 
-****************************************************************************************************/
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// Dependencies: 
+// Revision:
+// Revision 0.01 - File Created
+
+// --------------------------------------------------------------------------------
 
 module router_sync ( clock, resetn, data_in, detect_add, full_0, full_1, full_2, empty_0, empty_1, empty_2, write_enb_reg, read_enb_0, read_enb_1, read_enb_2, write_enb, fifo_full, vld_out_0, vld_out_1, vld_out_2, soft_reset_0, soft_reset_1, soft_reset_2 );
 
