@@ -1,12 +1,18 @@
+// --------------------------------------------------------------------------------
 
-/***************************************************************************************************
+// Create Date: 28.10.2023 01:14:47
+// Design Name: 
+// Module Name: fifo.v
+// Project Name: 1 x 3 Router Design
 
-NAME        :  MOHAMED ANAS MN
-FILENAME    :  router_fifo.v
-DATE        :  10/08/2021
-DESCRIPTION :  ROUTER - FIFO design
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// Dependencies: 
+// Revision:
+// Revision 0.01 - File Created
 
-****************************************************************************************************/
+// --------------------------------------------------------------------------------
 
 module router_fifo(clock,resetn,soft_reset,write_enb,read_enb,
                    lfd_state,data_in,full,empty,data_out);
