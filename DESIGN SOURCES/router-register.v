@@ -1,11 +1,18 @@
-/***************************************************************************************************
+// --------------------------------------------------------------------------------
 
-NAME        :  CHANDRA PRAKASH
-FILENAME    :  router-register.v
-DATE        :  26/10/2023
-DESCRIPTION :  ROUTER - REGISTER design
+// Create Date: 28.10.2023 01:14:47
+// Design Name: 
+// Module Name: router-register
+// Project Name: 1 x 3 Router Design
 
-****************************************************************************************************/
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// Dependencies: 
+// Revision:
+// Revision 0.01 - File Created
+
+// --------------------------------------------------------------------------------
 
 module router_reg ( clock, resetn, pkt_valid, data_in, fifo_full, detect_add, ld_state, laf_state, full_state, lfd_state, rst_int_reg, err, parity_done, low_packet_valid, dout );
 
@@ -16,7 +23,7 @@ output reg [7:0]dout;
 reg [7:0] header, int_reg, int_parity, ext_parity;
   
   
-  //------------------------------DATA OUT LOGIC---------------------------------
+  //------------------------------ DATA OUT LOGIC ---------------------------------
 
 	always@(posedge clock)
    	begin
@@ -38,7 +45,7 @@ reg [7:0] header, int_reg, int_parity, ext_parity;
 	     dout<=int_reg;
      end
 
-  //---------------------------LOW PACKET VALID LOGIC----------------------------
+  //--------------------------- LOW PACKET VALID LOGIC ----------------------------
 	
       	always@(posedge clock)
 	   		begin
@@ -50,7 +57,7 @@ reg [7:0] header, int_reg, int_parity, ext_parity;
               else if(ld_state && !pkt_valid) 
          			low_packet_valid<=1;
 			end
-  //----------------------------PARITY DONE LOGIC--------------------------------
+  //---------------------------- PARITY DONE LOGIC --------------------------------
 	
 	always@(posedge clock)
 	begin
@@ -63,7 +70,7 @@ reg [7:0] header, int_reg, int_parity, ext_parity;
 	  parity_done<=1;
 	end
 
-//---------------------------PARITY CALCULATE LOGIC----------------------------
+//--------------------------- PARITY CALCULATE LOGIC ----------------------------
 
 	always@(posedge clock)
 	begin
@@ -80,7 +87,7 @@ reg [7:0] header, int_reg, int_parity, ext_parity;
 	end
 	 
 
-//-------------------------------ERROR LOGIC-----------------------------------
+//------------------------------- ERROR LOGIC -----------------------------------
 
 	always@(posedge clock)
 		begin
@@ -97,7 +104,7 @@ reg [7:0] header, int_reg, int_parity, ext_parity;
 	    		err<=0;
 	      end
 
-//-------------------------------EXTERNAL PARITY LOGIC-------------------------
+//------------------------------- EXTERNAL PARITY LOGIC -------------------------
 
 	always@(posedge clock)
 	begin
