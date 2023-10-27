@@ -23,7 +23,6 @@ wire [7:0]dout;
 integer i;
 parameter cycle=10;
 
-
 router_reg DUT(clock,resetn,pkt_valid,data_in,fifo_full,detect_add,ld_state,laf_state,full_state,lfd_state,rst_int_reg,err,parity_done,low_packet_valid,dout);
 
 initial
