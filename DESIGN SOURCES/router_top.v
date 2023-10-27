@@ -1,11 +1,18 @@
-/***************************************************************************************************
+// --------------------------------------------------------------------------------
 
-NAME        :  CHANDRA PRAKASH S
-FILENAME    :  router_top.v
-DATE        :  26/10/2023
-DESCRIPTION :  ROUTER - TOP design
+// Create Date: 28.10.2023 01:14:47
+// Design Name: 
+// Module Name: router_top
+// Project Name: 1 x 3 Router Design
 
-****************************************************************************************************/
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// Dependencies: 
+// Revision:
+// Revision 0.01 - File Created
+
+// --------------------------------------------------------------------------------
 
 module router_top(clock,resetn,pkt_valid,read_enb_0,read_enb_1,read_enb_2,data_in,busy,err,vld_out_0,vld_out_1,vld_out_2,data_out_0,data_out_1,data_out_2);
   
