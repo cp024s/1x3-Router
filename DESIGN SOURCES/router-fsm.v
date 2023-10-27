@@ -1,11 +1,18 @@
-/***************************************************************************************************
+// --------------------------------------------------------------------------------
 
-NAME        :  MOHAMED ANAS MN
-FILENAME    :  router_fsm.v
-DATE        :  22/08/2021
-DESCRIPTION :  ROUTER FSM - design
+// Create Date: 28.10.2023 01:14:47
+// Design Name: 
+// Module Name: router-fsm
+// Project Name: 1 x 3 Router Design
 
-****************************************************************************************************/
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// Dependencies: 
+// Revision:
+// Revision 0.01 - File Created
+
+// --------------------------------------------------------------------------------
 
 module router_fsm ( clock, resetn, pkt_valid, data_in, fifo_full, fifo_empty_0, fifo_empty_1, fifo_empty_2, soft_reset_0, soft_reset_1, soft_reset_2, 
                    parity_done, low_packet_valid, write_enb_reg, detect_add, ld_state, laf_state, lfd_state, full_state, rst_int_reg, busy );
